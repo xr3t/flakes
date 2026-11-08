@@ -33,9 +33,9 @@ fixes; there are no release branches.
   that was fetched when the update ran, not that it is safe. Where upstream
   publishes more, `update.sh` checks it as well: Node's `SHASUMS256.txt` must
   carry a signature by a Node release key; downloads must match the checksums
-  upstream lists beside them (checksum files, update manifests, Chrome's
-  update server); GitHub release assets must match the digest GitHub recorded
-  at upload; and npm packages are pinned by the registry's integrity hash. Every upstream version goes through `check_version`
+  upstream lists beside them (checksum files, package indexes, update
+  manifests, Chrome's update server); GitHub release assets must match the
+  digest GitHub recorded at upload; and npm packages are pinned by the registry's integrity hash. Every upstream version goes through `check_version`
   (`lib/update.sh`) before it reaches a URL, `hashes.json` or a commit
   message.
 - **Rolling builds.** `ghostty-tip` follows upstream builds that are
@@ -84,6 +84,9 @@ one. On macOS (launchd) there is none.
   hardening.
 - `rayfish`: upstream's unit; root, for its TUN device, routes and resolver,
   and no sandbox.
+- `cloudflare-warp`: upstream's own `warp-svc.service` on NixOS, with its
+  capability bounding set and no other sandbox, and the daemon's launchd job
+  on macOS; root, for its tunnel, routes and DNS.
 - `nullclaw` and `1mcp`: no sandbox upstream. `hardening.enable` (off by
   default) adds one: no privilege gain, so no `sudo`; nullclaw can write only
   to its `stateDir` (plus `hardening.readWritePaths`), 1mcp gets a private
