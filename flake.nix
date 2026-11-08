@@ -22,6 +22,8 @@
       # Unfree packages this flake's own `packages` allow. Overlay users allow
       # them in their own nixpkgs config.
       allowedUnfree = [
+        "cloudflare-warp"
+        "cloudflare-warp-headless"
         "google-chrome"
         "littlesnitch"
       ];
@@ -83,6 +85,7 @@
         nixpkgs.lib.nixosSystem {
           modules = [
             self.nixosModules."1mcp"
+            self.nixosModules.cloudflare-warp
             self.nixosModules.herdr
             self.nixosModules.littlesnitch
             self.nixosModules.rayfish
@@ -102,6 +105,7 @@
                   user = "alice";
                   settings.mcpServers = { };
                 };
+                cloudflare-warp.enable = true;
                 littlesnitch.enable = true;
                 rayfish.enable = true;
               };

@@ -1,0 +1,8 @@
+{
+  "version": "2026.8.2115.0",
+  "hashes": {
+    "aarch64-darwin": "sha256-G4HFEumsH6KMY/KP8DHSJExqI/2MjVAPrhTziTj66l0=",
+    "aarch64-linux": "sha256-5UiONZYdZpieag9ZGnTUgTbCP0UNyn020tVCa2Op7uI=",
+    "x86_64-linux": "sha256-AgkQeGDDxoUamrj9A2kBIaPeoxmbCE+Bl2IAcsZxzWg="
+  }
+}

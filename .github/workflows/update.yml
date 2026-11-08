@@ -31,7 +31,7 @@ env:
   # user's access: their updates go through a pull request (branch
   # update/<name>), which check.yml merges once every system builds it,
   # instead of straight to main from this Linux-only run.
-  REVIEW: "1mcp codex cua-driver hermes-agent littlesnitch muxin nullclaw opencode pi rayfish"
+  REVIEW: "1mcp cloudflare-warp codex cua-driver hermes-agent littlesnitch muxin nullclaw opencode pi rayfish"
 
 jobs:
   # Every package that builds on Linux, and nixpkgs weekly. See
