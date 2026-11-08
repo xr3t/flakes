@@ -1,23 +1,23 @@
 {
-  "version": "0.1.13",
+  "version": "0.1.14",
   "core_min": "0.1.11",
-  "notes": "Herdr 0.1.13",
+  "notes": "Herdr 0.1.14",
   "targets": {
     "linux-aarch64": {
-      "url": "https://releases.herdr.dev/app/0.1.13/herdr-app-linux-aarch64.tar.gz",
-      "sha256": "2e5bb05c47cffbad018ad34217ea4c816476d7eb842692f740798c9020f0281e"
+      "url": "https://releases.herdr.dev/app/0.1.14/herdr-app-linux-aarch64.tar.gz",
+      "sha256": "30a431ce95c17356efe8afed50c4eaf8888d83ef45acd9aa911094d51707d007"
     },
     "linux-x86_64": {
-      "url": "https://releases.herdr.dev/app/0.1.13/herdr-app-linux-x86_64.tar.gz",
-      "sha256": "77b0be72a46ca14bb367365a04164641f914b3a69712bac391d39c56a959bef4"
+      "url": "https://releases.herdr.dev/app/0.1.14/herdr-app-linux-x86_64.tar.gz",
+      "sha256": "475a383f8f439e3191a86635b5c1286ce4dfd2d9fcdf1e7cbdfdd6c7176f8ff3"
     },
     "macos-aarch64": {
-      "url": "https://releases.herdr.dev/app/0.1.13/herdr-app-macos-aarch64.tar.gz",
-      "sha256": "f5dd0bc81aa9ef61cfbfb6ef9fdbf4fe7f664d4ec676ee0dc88f13cc9759d0d0"
+      "url": "https://releases.herdr.dev/app/0.1.14/herdr-app-macos-aarch64.tar.gz",
+      "sha256": "0da6ca214214389ca39e05fdf6523fd6e4be423a4be7dfd39b677d68a410fa8b"
     },
     "windows-x86_64": {
-      "url": "https://releases.herdr.dev/app/0.1.13/herdr-app-windows-x86_64.tar.gz",
-      "sha256": "72cb26f92a6b77e1125fecd2b18f87cc69a18c2da766a8ed8a5bcbd7b16c6012"
+      "url": "https://releases.herdr.dev/app/0.1.14/herdr-app-windows-x86_64.tar.gz",
+      "sha256": "c8a9da0e1b7c8ec85e2e131006797ba0fe0fc7793f3ab80e482f7622a5516b01"
     }
   }
 }
