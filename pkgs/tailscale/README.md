@@ -7,9 +7,19 @@ Linux builds. It installs the tarball that
 `x86_64-linux` and `aarch64-linux` and compiles nothing; the pinned release is
 `version` in `hashes.json`.
 
-**Linux only.** Upstream's only macOS build is the app (a `.zip` or `.pkg`),
-which is not a CLI install. On macOS take nixpkgs' `tailscale`, which builds
-`tailscaled` from source.
+**Linux only.** Upstream's only macOS build is the app (a `.zip` or `.pkg`
+with a system extension), which is not a CLI install, so this package has none.
+For the CLI and daemon on macOS use nixpkgs' `tailscale`, which is built from
+source (its binary is in the NixOS cache). nix-darwin's module runs
+`tailscaled` through launchd and puts `tailscale` on the `PATH`:
+
+```nix
+services.tailscale.enable = true;
+```
+
+That package is not this one: it has none of the settings below, so set them
+yourself. Set `TS_NO_LOGS_NO_SUPPORT` for the daemon to stop its log upload
+(see Updates and telemetry), and use `tailscale set --update-check=false`.
 
 ## Usage
 
