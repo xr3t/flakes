@@ -87,6 +87,9 @@ one. On macOS (launchd) there is none.
 - `cloudflare-warp`: upstream's own `warp-svc.service` on NixOS, with its
   capability bounding set and no other sandbox, and the daemon's launchd job
   on macOS; root, for its tunnel, routes and DNS.
+- `tailscale`: no module here; the package ships upstream's unit for
+  nixpkgs' `services.tailscale`, which runs `tailscaled` as root (for its TUN
+  device, routes and firewall rules) with no sandbox.
 - `nullclaw` and `1mcp`: no sandbox upstream. `hardening.enable` (off by
   default) adds one: no privilege gain, so no `sudo`; nullclaw can write only
   to its `stateDir` (plus `hardening.readWritePaths`), 1mcp gets a private

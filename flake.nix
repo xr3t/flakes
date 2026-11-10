@@ -108,6 +108,11 @@
                 cloudflare-warp.enable = true;
                 littlesnitch.enable = true;
                 rayfish.enable = true;
+                # nixpkgs' module, running this flake's package and its unit.
+                tailscale = {
+                  enable = true;
+                  package = self.packages.${system}.tailscale;
+                };
               };
             }
           ];
