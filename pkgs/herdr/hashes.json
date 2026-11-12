@@ -1,15 +1,15 @@
 {
-  "version": "0.1.15+core.0.1.20+cli.0.9.5",
+  "version": "0.1.15+core.0.1.21+cli.0.9.5",
   "app": "0.1.15",
-  "core": "0.1.20",
+  "core": "0.1.21",
   "cli": "0.9.5",
   "hashes": {
     "app-aarch64-darwin": "sha256-YC31bOrypfR74W58WASiKVhhRKVd1sYXECmRMjX8Zz8=",
     "app-x86_64-linux": "sha256-+Z4eBL6CwOELL2nudAPKNDhvSA2SUR31hlr0cD52Vd0=",
     "app-aarch64-linux": "sha256-Dl/ZWgVkUuwx4y/mqlpHqLHUICCujzoQzaLgoQAdQSQ=",
-    "core-aarch64-darwin": "sha256-5YmF0/726QnzPTxaRCbkiYyBVkpVfUY2WRzsnjoGryY=",
-    "core-x86_64-linux": "sha256-rGuGiQxFGjdYRiCqpDi3G8DQvUMKLnwdfglfBSxBTnQ=",
-    "core-aarch64-linux": "sha256-XzA3N50VzHbPxy0v0aQmLqHFsk3yeL98/Yrc/3uRSGI=",
+    "core-aarch64-darwin": "sha256-GrON2ScPY6j3lNbWDocC6w0chacr2oXXNeXupD8F/+0=",
+    "core-x86_64-linux": "sha256-eEJHVcEKQN3jigvbVcIKwZcG6a4F7Wj8Ks8fz/DZQcE=",
+    "core-aarch64-linux": "sha256-6ESiv6tIoiYJdnnQdryDBC/lf8zvU4fvgC5bJOeLUpo=",
     "cli-aarch64-darwin": "sha256-+3fCIyoFqANUITgsiUOS9BdOTjihjkivPdApAVfDp+I=",
     "cli-x86_64-linux": "sha256-FNnovItKngEY13wyJm921GHwm0A0LrI3UpYL2J9Zkp0=",
     "cli-aarch64-linux": "sha256-F9dTby2lCFlSNoDvJ53/ysjkojX05G/o2mwuxEFBiXw="
