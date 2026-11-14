@@ -6,6 +6,7 @@
   autoPatchelfHook,
   makeWrapper,
   nix-output-monitor,
+  sqlite,
 }:
 let
   sources = lib.importJSON ./hashes.json;
@@ -29,7 +30,10 @@ stdenvNoCC.mkDerivation {
     makeWrapper
   ]
   ++ lib.optionals stdenvNoCC.hostPlatform.isLinux [ autoPatchelfHook ];
-  buildInputs = lib.optionals stdenvNoCC.hostPlatform.isLinux [ stdenv.cc.cc.lib ];
+  buildInputs = lib.optionals stdenvNoCC.hostPlatform.isLinux [
+    stdenv.cc.cc.lib
+    sqlite
+  ];
 
   installPhase = ''
     runHook preInstall
