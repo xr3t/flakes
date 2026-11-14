@@ -52,7 +52,7 @@ stdenvNoCC.mkDerivation {
   doInstallCheck = true;
   installCheckPhase = ''
     runHook preInstallCheck
-    "$out/bin/littlesnitch" --version | grep -qF "Version: $version"
+    "$out/bin/littlesnitch" --version | grep -F "Version: $version" >/dev/null
     runHook postInstallCheck
   '';
 
